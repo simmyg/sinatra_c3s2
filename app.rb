@@ -31,7 +31,7 @@ require 'sinatra'
  end
 
  post '/' do
-   @name = params[:user_name] << " Bob" 
+   @name = params[:user_name] 
    @age  = params[:user_age].to_i
 
    if @age >= 18
